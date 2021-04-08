@@ -4,6 +4,7 @@ plugins {
     id 'com.github.spotbugs' version '4.7.0'
     id 'checkstyle'
     id 'pmd'
+    id "org.myire.quill.cpd" version "2.4"
 }
 
 repositories {
