@@ -3,14 +3,24 @@ plugins {
     id 'java'
     id 'com.github.spotbugs' version '4.7.0'
     id 'checkstyle'
+    id 'pmd'
 }
 
 repositories {
     mavenCentral()
 }
 
+checkstyle {
+    ignoreFailures = true
+    maxWarnings = 200
+}
+
 spotbugs {
     effort = 'max'
+}
+
+pmd {
+    ignoreFailures = true
 }
 
 dependencies {
